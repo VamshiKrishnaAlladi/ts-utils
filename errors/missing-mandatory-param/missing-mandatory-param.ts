@@ -6,7 +6,7 @@ export class MissingMandatoryParamError extends Error {
         super();
 
         this.name = 'MissingMandatoryParamError';
-        this.message = `It is mandtory to pass the parameter ${paramName}`;
+        this.message = `It is mandtory to pass the parameter "${paramName}"`;
 
         // The next statement is used to fix an issue with TypeScript.
         // Reference: https://github.com/Microsoft/TypeScript/issues/13965

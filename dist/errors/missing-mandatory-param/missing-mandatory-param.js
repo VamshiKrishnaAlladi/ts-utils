@@ -16,7 +16,7 @@ var MissingMandatoryParamError = /** @class */ (function (_super) {
         var _newTarget = this.constructor;
         var _this = _super.call(this) || this;
         _this.name = 'MissingMandatoryParamError';
-        _this.message = "It is mandtory to pass the parameter " + paramName;
+        _this.message = "It is mandtory to pass the parameter \"" + paramName + "\"";
         // The next statement is used to fix an issue with TypeScript.
         // Reference: https://github.com/Microsoft/TypeScript/issues/13965
         _this.__proto__ = _newTarget.prototype;
