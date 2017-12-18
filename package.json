@@ -1,8 +1,8 @@
 {
     "name": "@vka/ts-utils",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "A Collection of utility functions for TS made in TS",
-    "main": "dist/ts-utils.js",
+    "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
         "test": "jest --verbose",
