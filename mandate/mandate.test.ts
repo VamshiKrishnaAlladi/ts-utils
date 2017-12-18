@@ -10,7 +10,7 @@ describe('Module ts-utils/mandate:', () => {
     describe('Exported function "mandate":', () => {
         test('should throw a MissingMandatoryParamError when called', () => {
             const { mandate } = require('./mandate');
-    
+
             expect(mandate).toThrowError(MissingMandatoryParamError);
         });
     });
