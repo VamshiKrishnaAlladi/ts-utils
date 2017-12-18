@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "declaration": true,
+        "skipLibCheck": true,
         "outDir": "dist",
         "suppressImplicitAnyIndexErrors": true,
         "target": "ES5"
