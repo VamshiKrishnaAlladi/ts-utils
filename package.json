@@ -20,5 +20,8 @@
     "bugs": {
         "url": "https://github.com/VamshiKrishnaAlladi/ts-utils/issues"
     },
-    "homepage": "https://github.com/VamshiKrishnaAlladi/ts-utils#readme"
+    "homepage": "https://github.com/VamshiKrishnaAlladi/ts-utils#readme",
+    "devDependencies": {
+        "tslint-config-airbnb": "^5.4.2"
+    }
 }
