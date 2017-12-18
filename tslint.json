@@ -3,6 +3,7 @@
         "tslint-config-airbnb"
     ],
     "rules": {
-        "ter-indent": "off"
+        "ter-indent": "off",
+        "max-line-length": [true, 120]
     }
 }
