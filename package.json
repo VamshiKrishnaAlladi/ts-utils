@@ -1,0 +1,35 @@
+{
+    "name": "@vka/ts-utils",
+    "version": "1.0.0",
+    "description": "A Collection of utility functions for TS made in TS",
+    "main": "dist/ts-utils.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest --verbose",
+        "watch:build": "tsc --watch",
+        "watch:test": "jest --watchAll --verbose"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/VamshiKrishnaAlladi/ts-utils.git"
+    },
+    "keywords": [
+        "TS-Utils",
+        "Utilities",
+        "utils"
+    ],
+    "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/VamshiKrishnaAlladi/ts-utils/issues"
+    },
+    "homepage": "https://github.com/VamshiKrishnaAlladi/ts-utils#readme",
+    "devDependencies": {
+        "@types/jest": "^21.1.8",
+        "@types/node": "^8.5.1",
+        "jest": "^21.2.1",
+        "tslint": "^5.8.0",
+        "tslint-config-airbnb": "^5.4.2",
+        "typescript": "^2.6.2"
+    }
+}
