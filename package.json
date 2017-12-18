@@ -1,6 +1,6 @@
 {
     "name": "@vka/ts-utils",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Collection of utility functions for TS made in TS",
     "main": "dist/ts-utils.js",
     "scripts": {
