@@ -1,1 +1,1 @@
-export declare function mandate(paramName: string): void;
+export declare function mandate(paramName: string): any;
