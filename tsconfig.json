@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "outDir": "dist",
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "ES5"
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
