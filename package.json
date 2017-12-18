@@ -4,9 +4,9 @@
     "description": "A Collection of utility functions for TS made in TS",
     "main": "ts-utils.js",
     "scripts": {
-        "build": "tsc .",
+        "build": "tsc",
         "test": "jest --verbose",
-        "watch:build": "tsc --watch .",
+        "watch:build": "tsc --watch",
         "watch:test": "jest --watchAll --verbose"
     },
     "repository": {
