@@ -1,0 +1,24 @@
+{
+    "name": "@vka/ts-utils",
+    "version": "0.0.1",
+    "description": "A Collection of utility functions for TS made in TS",
+    "main": "ts-utils.js",
+    "scripts": {
+        "test": "jest --verbose"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/VamshiKrishnaAlladi/ts-utils.git"
+    },
+    "keywords": [
+        "TS-Utils",
+        "Utilities",
+        "utils"
+    ],
+    "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/VamshiKrishnaAlladi/ts-utils/issues"
+    },
+    "homepage": "https://github.com/VamshiKrishnaAlladi/ts-utils#readme"
+}
