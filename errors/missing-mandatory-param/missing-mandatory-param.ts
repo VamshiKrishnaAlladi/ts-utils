@@ -1,15 +1,9 @@
-export class MissingMandatoryParamError extends Error {
-    // tslint:disable-next-line:variable-name
-    __proto__: Error;
+import { BaseError } from './../base-error';
 
+export class MissingMandatoryParamError extends BaseError {
     public constructor(paramName: string) {
-        super();
+        super(`It is mandtory to pass the parameter "${paramName}"`);
 
         this.name = 'MissingMandatoryParamError';
-        this.message = `It is mandtory to pass the parameter "${paramName}"`;
-
-        // The next statement is used to fix an issue with TypeScript.
-        // Reference: https://github.com/Microsoft/TypeScript/issues/13965
-        this.__proto__ = new.target.prototype;
     }
 }

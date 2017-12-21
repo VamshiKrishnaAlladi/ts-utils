@@ -1,4 +1,4 @@
-export declare class MissingMandatoryParamError extends Error {
-    __proto__: Error;
+import { BaseError } from './../base-error';
+export declare class MissingMandatoryParamError extends BaseError {
     constructor(paramName: string);
 }

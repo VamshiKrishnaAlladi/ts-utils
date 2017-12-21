@@ -4,9 +4,10 @@ describe('Module ts-utils/errors/missing-mandatory-param:', function () {
         expect(MissingMandatoryParamError).toBeInstanceOf(Function);
     });
     describe('Exported class MissingMandtaoryParamError:', function () {
-        test('should be a subclass of Error class', function () {
+        test('should be a subclass of BaseError class', function () {
             var MissingMandatoryParamError = require('./missing-mandatory-param').MissingMandatoryParamError;
-            expect(MissingMandatoryParamError.prototype).toBeInstanceOf(Error);
+            var BaseError = require('./../base-error').BaseError;
+            expect(MissingMandatoryParamError.prototype).toBeInstanceOf(BaseError);
         });
     });
 });
