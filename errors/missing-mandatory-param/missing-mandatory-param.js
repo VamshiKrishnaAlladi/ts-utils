@@ -10,18 +10,14 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var base_error_1 = require("./../base-error");
 var MissingMandatoryParamError = /** @class */ (function (_super) {
     __extends(MissingMandatoryParamError, _super);
     function MissingMandatoryParamError(paramName) {
-        var _newTarget = this.constructor;
-        var _this = _super.call(this) || this;
+        var _this = _super.call(this, "It is mandtory to pass the parameter \"" + paramName + "\"") || this;
         _this.name = 'MissingMandatoryParamError';
-        _this.message = "It is mandtory to pass the parameter \"" + paramName + "\"";
-        // The next statement is used to fix an issue with TypeScript.
-        // Reference: https://github.com/Microsoft/TypeScript/issues/13965
-        _this.__proto__ = _newTarget.prototype;
         return _this;
     }
     return MissingMandatoryParamError;
-}(Error));
+}(base_error_1.BaseError));
 exports.MissingMandatoryParamError = MissingMandatoryParamError;
