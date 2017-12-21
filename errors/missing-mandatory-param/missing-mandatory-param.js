@@ -14,7 +14,7 @@ var base_error_1 = require("./../base-error");
 var MissingMandatoryParamError = /** @class */ (function (_super) {
     __extends(MissingMandatoryParamError, _super);
     function MissingMandatoryParamError(paramName) {
-        var _this = _super.call(this, "It is mandtory to pass the parameter \"" + paramName + "\"") || this;
+        var _this = _super.call(this, "It is mandatory to pass the parameter: \"" + paramName + "\"") || this;
         _this.name = 'MissingMandatoryParamError';
         return _this;
     }
