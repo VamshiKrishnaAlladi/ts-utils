@@ -6,10 +6,11 @@ describe('Module ts-utils/errors/missing-mandatory-param:', () => {
     });
     
     describe('Exported class MissingMandtaoryParamError:', () => {
-        test('should be a subclass of Error class', () => {
+        test('should be a subclass of BaseError class', () => {
             const { MissingMandatoryParamError } = require('./missing-mandatory-param');
+            const { BaseError } = require('./../base-error');
 
-            expect(MissingMandatoryParamError.prototype).toBeInstanceOf(Error);
+            expect(MissingMandatoryParamError.prototype).toBeInstanceOf(BaseError);
         });
     });
 });
