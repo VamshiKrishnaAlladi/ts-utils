@@ -1,6 +1,6 @@
 {
     "name": "@vka/ts-utils",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "A Collection of utility functions for TS made in TS",
     "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
     "license": "MIT",
