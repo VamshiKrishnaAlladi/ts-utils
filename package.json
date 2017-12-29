@@ -1,6 +1,6 @@
 {
     "name": "@vka/ts-utils",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "A Collection of utility functions for TS made in TS",
     "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
     "license": "MIT",
@@ -9,7 +9,6 @@
         "Utilities",
         "utils"
     ],
-
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/VamshiKrishnaAlladi/ts-utils.git"
@@ -18,7 +17,6 @@
         "url": "https://github.com/VamshiKrishnaAlladi/ts-utils/issues"
     },
     "homepage": "https://github.com/VamshiKrishnaAlladi/ts-utils#readme",
-
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
