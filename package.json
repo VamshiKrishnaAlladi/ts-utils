@@ -2,6 +2,23 @@
     "name": "@vka/ts-utils",
     "version": "1.2.2",
     "description": "A Collection of utility functions for TS made in TS",
+    "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+        "TS-Utils",
+        "Utilities",
+        "utils"
+    ],
+
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/VamshiKrishnaAlladi/ts-utils.git"
+    },
+    "bugs": {
+        "url": "https://github.com/VamshiKrishnaAlladi/ts-utils/issues"
+    },
+    "homepage": "https://github.com/VamshiKrishnaAlladi/ts-utils#readme",
+
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
@@ -9,21 +26,6 @@
         "watch:build": "tsc --watch",
         "watch:test": "jest --watchAll --verbose"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/VamshiKrishnaAlladi/ts-utils.git"
-    },
-    "keywords": [
-        "TS-Utils",
-        "Utilities",
-        "utils"
-    ],
-    "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/VamshiKrishnaAlladi/ts-utils/issues"
-    },
-    "homepage": "https://github.com/VamshiKrishnaAlladi/ts-utils#readme",
     "devDependencies": {
         "@types/jest": "^22.0.0",
         "@types/node": "^8.5.1",
