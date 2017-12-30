@@ -20,9 +20,10 @@
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
-        "lint": "tslint -t codeFrame -p .",
+        "lint": "echo Running linting task... && echo: && tslint -t codeFrame -p .",
         "test": "jest --verbose",
         "watch:build": "tsc --watch",
+        "watch:lint": "watch \"echo Running linting task... && echo: && tslint -t codeFrame -p .\"",
         "watch:test": "jest --watchAll --verbose"
     },
     "devDependencies": {
