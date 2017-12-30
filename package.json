@@ -20,8 +20,10 @@
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
+        "lint": "echo Running linting task... && echo: && tslint -t codeFrame -p .",
         "test": "jest --verbose",
         "watch:build": "tsc --watch",
+        "watch:lint": "watch \"echo Running linting task... && echo: && tslint -t codeFrame -p .\"",
         "watch:test": "jest --watchAll --verbose"
     },
     "devDependencies": {
@@ -31,7 +33,8 @@
         "ts-jest": "^22.0.0",
         "tslint": "^5.8.0",
         "tslint-config-airbnb": "^5.4.2",
-        "typescript": "^2.6.2"
+        "typescript": "^2.6.2",
+        "watch": "^1.0.2"
     },
     "jest": {
         "transform": {
