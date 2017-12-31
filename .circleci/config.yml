@@ -5,6 +5,8 @@
 version: 2
 jobs:
   build:
+    environment:
+      CC_TEST_REPORTER_ID: 518940db81ece3ad9d8074343805722bdadc35e6a73395aa35a1b6933374538d
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -36,5 +38,17 @@ jobs:
       # run linting task
       - run: npm run lint
 
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+
+      # trigger Code Climate's before build
+      - run: ./cc-test-reporter before-build
+
       # run tests!
       - run: npm test
+
+      # trigger Code Climate's after build
+      - run: ./cc-test-reporter after-build --coverage-input-type clover --exit-code $?
