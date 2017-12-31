@@ -1,35 +1,53 @@
 {
     "name": "@vka/ts-utils",
-    "version": "1.2.2",
+    "version": "1.2.4",
     "description": "A Collection of utility functions for TS made in TS",
-    "main": "ts-utils.js",
-    "scripts": {
-        "build": "tsc",
-        "test": "jest --verbose",
-        "watch:build": "tsc --watch",
-        "watch:test": "jest --watchAll --verbose"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/VamshiKrishnaAlladi/ts-utils.git"
-    },
+    "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
+    "license": "MIT",
     "keywords": [
         "TS-Utils",
         "Utilities",
         "utils"
     ],
-    "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
-    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/VamshiKrishnaAlladi/ts-utils.git"
+    },
     "bugs": {
         "url": "https://github.com/VamshiKrishnaAlladi/ts-utils/issues"
     },
     "homepage": "https://github.com/VamshiKrishnaAlladi/ts-utils#readme",
+    "main": "ts-utils.js",
+    "scripts": {
+        "build": "tsc",
+        "lint": "echo Running linting task... && echo: && tslint -t codeFrame -p .",
+        "test": "jest --verbose",
+        "watch:build": "tsc --watch",
+        "watch:lint": "watch \"echo Running linting task... && echo: && tslint -t codeFrame -p .\"",
+        "watch:test": "jest --watchAll --verbose"
+    },
     "devDependencies": {
-        "@types/jest": "^21.1.8",
+        "@types/jest": "^22.0.0",
         "@types/node": "^8.5.1",
-        "jest": "^21.2.1",
+        "jest": "^22.0.4",
+        "ts-jest": "^22.0.0",
         "tslint": "^5.8.0",
         "tslint-config-airbnb": "^5.4.2",
-        "typescript": "^2.6.2"
+        "typescript": "^2.6.2",
+        "watch": "^1.0.2"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
     }
 }

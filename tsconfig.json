@@ -5,5 +5,8 @@
         "suppressImplicitAnyIndexErrors": true,
         "target": "ES5"
     },
-    "exclude": [ "node_modules" ]
+    "exclude": [
+        "node_modules",
+        "**/*.test.ts"
+    ]
 }
