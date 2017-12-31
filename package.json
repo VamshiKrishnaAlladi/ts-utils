@@ -26,6 +26,10 @@
         "watch:lint": "watch \"echo Running linting task... && echo: && tslint -t codeFrame -p .\"",
         "watch:test": "jest --watchAll --verbose"
     },
+    "engines": {
+        "node": ">=7.10.0",
+        "npm": ">=4.2.0"
+    },
     "devDependencies": {
         "@types/jest": "^22.0.0",
         "@types/node": "^8.5.1",
