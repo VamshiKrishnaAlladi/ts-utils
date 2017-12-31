@@ -51,4 +51,4 @@ jobs:
       - run: npm test
 
       # trigger Code Climate's after build
-      - run: ./cc-test-reporter after-build --coverage-input-type clover --exit-code $?
+      - run: ./cc-test-reporter after-build -p ./coverage --exit-code $?
