@@ -1,6 +1,6 @@
 {
     "name": "@vka/ts-utils",
-    "version": "1.2.5",
+    "version": "1.3.0",
     "description": "A Collection of utility functions for TS made in TS",
     "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
     "license": "MIT",
@@ -20,11 +20,15 @@
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
-        "lint": "echo Running linting task... && echo: && tslint -t codeFrame -p .",
+        "lint": "tslint -t codeFrame -p .",
         "test": "jest --verbose",
         "watch:build": "tsc --watch",
-        "watch:lint": "watch \"echo Running linting task... && echo: && tslint -t codeFrame -p .\"",
+        "watch:lint": "watch \"tslint -t codeFrame -p .\"",
         "watch:test": "jest --watchAll --verbose"
+    },
+    "engines": {
+        "node": ">=7.10.0",
+        "npm": ">=4.2.0"
     },
     "devDependencies": {
         "@types/jest": "^22.0.0",
@@ -37,6 +41,13 @@
         "watch": "^1.0.2"
     },
     "jest": {
+        "collectCoverage": true,
+        "mapCoverage": true,
+        "globals": {
+            "ts-jest": {
+                "tsConfigFile": "./ts-jest.tsconfig.json"
+            }
+        },
         "transform": {
             "^.+\\.tsx?$": "ts-jest"
         },
