@@ -16,6 +16,7 @@ var MissingMandatoryParamError = /** @class */ (function (_super) {
     function MissingMandatoryParamError(paramName) {
         var _this = _super.call(this, "It is mandatory to pass the parameter: \"" + paramName + "\"") || this;
         _this.name = 'MissingMandatoryParamError';
+        _this.missingParam = paramName;
         return _this;
     }
     return MissingMandatoryParamError;
