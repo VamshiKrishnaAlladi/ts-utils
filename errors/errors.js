@@ -4,4 +4,4 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./base-error"));
-__export(require("./missing-mandatory-param"));
+__export(require("./missing-mandatory-param-error"));
