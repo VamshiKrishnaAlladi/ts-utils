@@ -1,1 +1,1 @@
-export * from './fordidden-action-error';
+export * from './forbidden-action-error';
