@@ -1,2 +1,2 @@
 export * from './base-error';
-export * from './missing-mandatory-param';
+export * from './missing-mandatory-param-error';
