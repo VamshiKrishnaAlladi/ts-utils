@@ -1,6 +1,6 @@
 {
     "name": "@vka/ts-utils",
-    "version": "1.4.1",
+    "version": "0.0.0-development",
     "description": "A Collection of utility functions for TS made in TS",
     "author": "Vamshi Krishna Alladi <vamshikrishnaalladi.me@gmail.com>",
     "license": "MIT",
@@ -11,7 +11,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/VamshiKrishnaAlladi/ts-utils.git"
+        "url": "https://github.com/VamshiKrishnaAlladi/ts-utils.git"
     },
     "bugs": {
         "url": "https://github.com/VamshiKrishnaAlladi/ts-utils/issues"
@@ -25,7 +25,8 @@
         "test": "jest --verbose",
         "watch:build": "tsc --watch",
         "watch:lint": "watch \"tslint -t codeFrame -p .\"",
-        "watch:test": "jest --watchAll --verbose"
+        "watch:test": "jest --watchAll --verbose",
+        "semantic-release": "semantic-release"
     },
     "engines": {
         "node": ">=7.10.0",
@@ -41,7 +42,8 @@
         "tslint": "^5.8.0",
         "tslint-config-airbnb": "^5.4.2",
         "typescript": "^2.6.2",
-        "watch": "^1.0.2"
+        "watch": "^1.0.2",
+        "semantic-release": "^12.4.1"
     },
     "jest": {
         "collectCoverage": true,

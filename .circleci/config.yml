@@ -5,11 +5,9 @@
 version: 2
 jobs:
   build:
-    environment:
-      CC_TEST_REPORTER_ID: 518940db81ece3ad9d8074343805722bdadc35e6a73395aa35a1b6933374538d
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: circleci/node:latest
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -52,3 +50,7 @@ jobs:
 
       # trigger Code Climate's after build
       - run: ./cc-test-reporter after-build -p ./coverage --exit-code $?
+
+      - run:
+        name: release
+        command: npm run semantic-release || true
