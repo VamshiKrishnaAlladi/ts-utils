@@ -20,6 +20,7 @@
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
+        "commit": "git-cz -a",
         "lint": "tslint -t codeFrame -p .",
         "test": "jest --verbose",
         "watch:build": "tsc --watch",
@@ -33,6 +34,7 @@
     "devDependencies": {
         "@types/jest": "^22.0.0",
         "@types/node": "^9.3.0",
+        "commitizen": "^2.9.6",
         "cz-conventional-changelog": "^2.1.0",
         "jest": "^22.0.4",
         "ts-jest": "^22.0.0",
