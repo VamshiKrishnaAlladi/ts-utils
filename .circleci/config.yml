@@ -52,5 +52,5 @@ jobs:
       - run: ./cc-test-reporter after-build -p ./coverage --exit-code $?
 
       - run:
-        name: release
-        command: npm run semantic-release || true
+          name: release
+          command: npm run semantic-release || true
