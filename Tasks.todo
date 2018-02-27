@@ -1,0 +1,2 @@
+Misc:
+    ☐ fix linting script (npm run lint) for ".test.ts" files
