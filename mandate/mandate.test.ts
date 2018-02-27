@@ -17,7 +17,7 @@ describe('Module ts-utils/mandate:', () => {
         test('should specify the paramName passed in the MissingMandatoryParamError thrown', () => {
             const { mandate } = require('.');
 
-            expect(() => { mandate('someParam');}).toThrowError(/.*"someParam"/);
+            expect(() => mandate('someParam')).toThrowError(/.*"someParam"/);
         });
     });
 });
