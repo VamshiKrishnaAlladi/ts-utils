@@ -1,2 +1,5 @@
 Misc:
     ☐ fix linting script (npm run lint) for ".test.ts" files
+    ☐ Add a Contributing.md to the repo
+    ☐ Add a GitCommitStyleGuide.md to the repo
+        // refer -> https://udacity.github.io/git-styleguide/
