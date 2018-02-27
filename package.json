@@ -33,6 +33,7 @@
     "devDependencies": {
         "@types/jest": "^22.0.0",
         "@types/node": "^9.3.0",
+        "cz-conventional-changelog": "^2.1.0",
         "jest": "^22.0.4",
         "ts-jest": "^22.0.0",
         "tslint": "^5.8.0",
@@ -60,5 +61,10 @@
             "json",
             "node"
         ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
