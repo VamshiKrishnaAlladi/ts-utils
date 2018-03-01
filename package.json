@@ -23,6 +23,7 @@
         "commit": "git-cz",
         "lint": "tslint -t codeFrame -p .",
         "test": "jest --verbose",
+        "test-ci": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage",
         "watch:build": "tsc --watch",
         "watch:lint": "watch \"tslint -t codeFrame -p .\"",
         "watch:test": "jest --watchAll --verbose",
