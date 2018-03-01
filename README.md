@@ -1,5 +1,13 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/VamshiKrishnaAlladi/ts-utils.svg)](https://greenkeeper.io/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
+
+Builds:
+
+[![CircleCI](https://img.shields.io/circleci/project/github/VamshiKrishnaAlladi/ts-utils/development.svg?label=CircleCI%20build%3A%20development)](https://circleci.com/gh/VamshiKrishnaAlladi/ts-utils/tree/development)
+[![CircleCI](https://img.shields.io/circleci/project/github/VamshiKrishnaAlladi/ts-utils/production.svg?label=CircleCI%20build%3A%20production)](https://circleci.com/gh/VamshiKrishnaAlladi/ts-utils/tree/production)
+
 
 # ts-utils
 
