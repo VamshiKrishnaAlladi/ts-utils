@@ -35,7 +35,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run linting task
       - run:
           name: Lint
           command: npm run lint
@@ -50,15 +49,8 @@ jobs:
           name: Run Tests
           command: |
             ./cc-test-reporter before-build
-            npm test
+            npm run test-ci
             ./cc-test-reporter after-build
-
-      - run:
-          name: Create test-results folder (if not existing)
-          command: mkdir -p test-results
-
-      - store_test_results:
-          path: test-results
 
       - run:
           name: Release
