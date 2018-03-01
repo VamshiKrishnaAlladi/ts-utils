@@ -20,7 +20,7 @@
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
-        "commit": "git-cz -a",
+        "commit": "git-cz",
         "lint": "tslint -t codeFrame -p .",
         "test": "jest --verbose",
         "watch:build": "tsc --watch",
