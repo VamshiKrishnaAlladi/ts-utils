@@ -52,7 +52,7 @@ jobs:
           name: Run Tests
           command: |
             ./cc-test-reporter before-build
-            npm test
+            npm run test-ci
             ./cc-test-reporter after-build -p ./coverage --exit-code $?
 
       - run:
