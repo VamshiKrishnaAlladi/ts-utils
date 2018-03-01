@@ -55,9 +55,13 @@ jobs:
       - run:
           name: Test
           command: npm test
-          
+
+      - run:
+          name: Create test-results folder (if not existing)
+          command: mkdir -p test-results
+
       - store_test_results:
-          path: ./test-results
+          path: test-results
 
       # trigger Code Climate's after build
       - run:
