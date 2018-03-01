@@ -20,9 +20,10 @@
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
-        "commit": "git-cz -a",
+        "commit": "git-cz",
         "lint": "tslint -t codeFrame -p .",
         "test": "jest --verbose",
+        "test-ci": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage",
         "watch:build": "tsc --watch",
         "watch:lint": "watch \"tslint -t codeFrame -p .\"",
         "watch:test": "jest --watchAll --verbose",
@@ -33,21 +34,21 @@
         "npm": ">=4.2.0"
     },
     "devDependencies": {
-        "@types/jest": "^22.0.0",
-        "@types/node": "^9.3.0",
+        "@types/jest": "^22.1.4",
+        "@types/node": "^9.4.6",
+        "codacy-coverage": "^2.0.3",
         "commitizen": "^2.9.6",
         "cz-conventional-changelog": "^2.1.0",
-        "jest": "^22.0.4",
-        "ts-jest": "^22.0.0",
-        "tslint": "^5.8.0",
-        "tslint-config-airbnb": "^5.4.2",
-        "typescript": "^2.6.2",
-        "watch": "^1.0.2",
-        "semantic-release": "^12.4.1"
+        "jest": "^22.4.2",
+        "semantic-release": "^12.4.1",
+        "ts-jest": "^22.4.0",
+        "tslint": "^5.9.1",
+        "tslint-config-airbnb": "^5.7.0",
+        "typescript": "^2.7.2",
+        "watch": "^1.0.2"
     },
     "jest": {
         "collectCoverage": true,
-        "mapCoverage": true,
         "globals": {
             "ts-jest": {
                 "tsConfigFile": "./ts-jest.tsconfig.json"

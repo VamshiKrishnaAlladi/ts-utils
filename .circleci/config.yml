@@ -26,15 +26,18 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run:
+          name: Install
+          command: npm install
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run linting task
-      - run: npm run lint
+      - run:
+          name: Lint
+          command: npm run lint
 
       - run:
           name: Setup Code Climate test-reporter
@@ -42,15 +45,13 @@ jobs:
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
             chmod +x ./cc-test-reporter
 
-      # trigger Code Climate's before build
-      - run: ./cc-test-reporter before-build
-
-      # run tests!
-      - run: npm test
-
-      # trigger Code Climate's after build
-      - run: ./cc-test-reporter after-build -p ./coverage --exit-code $?
+      - run:
+          name: Run Tests
+          command: |
+            ./cc-test-reporter before-build
+            npm run test-ci
+            ./cc-test-reporter after-build
 
       - run:
-          name: release
+          name: Release
           command: npm run semantic-release || true
