@@ -5,8 +5,6 @@
 version: 2
 jobs:
   build:
-    environment:
-      CC_TEST_REPORTER_ID: b0be67ae9fb61645c8b1ad1af5688a5f10198d9087f291d928572778104b87c5
     docker:
       # specify the version you desire here
       - image: circleci/node:latest
@@ -37,23 +35,13 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run linting task
       - run:
           name: Lint
           command: npm run lint
 
       - run:
-          name: Setup Code Climate test-reporter
-          command: |
-            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-            chmod +x ./cc-test-reporter
-
-      - run:
           name: Run Tests
-          command: |
-            ./cc-test-reporter before-build
-            npm run test-ci
-            ./cc-test-reporter after-build -p ./coverage --exit-code $?
+          command: npm run test-ci
 
       - run:
           name: Create test-results folder (if not existing)
