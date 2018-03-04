@@ -4,7 +4,7 @@ Misc:
     ☐ Add a GitCommitStyleGuide.md to the repo
         // refer -> https://udacity.github.io/git-styleguide/
     ☐ Add codecov
-    ☐ move jest config to its own file
+    ✔ move jest config to its own file @done(14:55 04-03-2018)
     ☐ setup .npmignore
     ☐ add prepublishonly script
     ☐ reorganize the folder structure
