@@ -7,4 +7,4 @@ Misc:
     ✔ move jest config to its own file @done(14:55 04-03-2018)
     ✔ setup .npmignore @done(21:55 04-03-2018)
     ☐ add prepublishonly script
-    ☐ reorganize the folder structure
+    ✔ reorganize the folder structure @done(22:22 04-03-2018)
