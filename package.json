@@ -20,12 +20,14 @@
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
+        "codecov": "codecov",
         "commit": "git-cz",
         "lint": "tslint -t codeFrame -p .",
+        "prepack": "tsc && jest && node scripts/prePublishOnly.js",
+        "prePublishOnly": "tsc && jest && node scripts/prePublishOnly.js",
         "test": "jest --verbose",
         "test-ci": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage",
         "watch:build": "tsc --watch",
-        "watch:lint": "watch \"tslint -t codeFrame -p .\"",
         "watch:test": "jest --watchAll --verbose",
         "semantic-release": "semantic-release"
     },
@@ -36,36 +38,17 @@
     "devDependencies": {
         "@types/jest": "^22.1.4",
         "@types/node": "^9.4.6",
-        "codacy-coverage": "^2.0.3",
+        "codacy-coverage": "^2.1.0",
+        "codecov": "^3.0.0",
         "commitizen": "^2.9.6",
         "cz-conventional-changelog": "^2.1.0",
+        "fs-extra": "^5.0.0",
         "jest": "^22.4.2",
         "semantic-release": "^12.4.1",
-        "ts-jest": "^22.4.0",
+        "ts-jest": "^22.4.1",
         "tslint": "^5.9.1",
         "tslint-config-airbnb": "^5.7.0",
-        "typescript": "^2.7.2",
-        "watch": "^1.0.2"
-    },
-    "jest": {
-        "collectCoverage": true,
-        "globals": {
-            "ts-jest": {
-                "tsConfigFile": "./ts-jest.tsconfig.json"
-            }
-        },
-        "transform": {
-            "^.+\\.tsx?$": "ts-jest"
-        },
-        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-        "moduleFileExtensions": [
-            "ts",
-            "tsx",
-            "js",
-            "jsx",
-            "json",
-            "node"
-        ]
+        "typescript": "^2.7.2"
     },
     "config": {
         "commitizen": {
