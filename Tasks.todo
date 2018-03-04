@@ -3,7 +3,7 @@ Misc:
     ☐ Add a Contributing.md to the repo
     ☐ Add a GitCommitStyleGuide.md to the repo
         // refer -> https://udacity.github.io/git-styleguide/
-    ☐ Add codecov
+    ✔ setup codecov coverage @done(15:13 04-03-2018)
     ✔ move jest config to its own file @done(14:55 04-03-2018)
     ☐ setup .npmignore
     ☐ add prepublishonly script

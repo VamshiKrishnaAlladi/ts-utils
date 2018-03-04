@@ -20,6 +20,7 @@
     "main": "ts-utils.js",
     "scripts": {
         "build": "tsc",
+        "codecov": "codecov",
         "commit": "git-cz",
         "lint": "tslint -t codeFrame -p .",
         "test": "jest --verbose",
@@ -36,6 +37,7 @@
         "@types/jest": "^22.1.4",
         "@types/node": "^9.4.6",
         "codacy-coverage": "^2.1.0",
+        "codecov": "^3.0.0",
         "commitizen": "^2.9.6",
         "cz-conventional-changelog": "^2.1.0",
         "jest": "^22.4.2",
