@@ -1,0 +1,13 @@
+.circleci/
+.vscode/
+coverage/
+dist/
+scripts/
+src/
+
+.releaserc.json
+jest.config.js
+Tasks.todo
+ts-jest.tsconfig.json
+tsconfig.json
+tslint.json
