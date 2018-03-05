@@ -11,3 +11,4 @@ Tasks.todo
 ts-jest.tsconfig.json
 tsconfig.json
 tslint.json
+cc-test-reporter
