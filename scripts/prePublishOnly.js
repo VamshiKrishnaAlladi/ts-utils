@@ -1,10 +1,8 @@
-const fse = require('fs-extra');
+const fse = require("fs-extra");
 
 try {
-    fse.moveSync('./dist', '.');
+    fse.copySync("./dist", ".", { overwrite: true });
+    console.log("Successfully copied 'dist' files to root dir...");
 } catch (error) {
-    console.error('Failed to move "dist" files to root dir...', error);
-    throw error.message;
+    console.error("Failed to copy 'dist' files to root dir...", error);
 }
-
-console.log('Successfully moved "dist" files to root dir...');
