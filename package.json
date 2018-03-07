@@ -22,6 +22,7 @@
         "build": "tsc",
         "codecov": "codecov",
         "commit": "git-cz",
+        "commitmsg": "commitlint -e $GIT_PARAMS",
         "lint": "tslint -t codeFrame -p .",
         "prepack": "tsc && jest && node scripts/prePublishOnly.js",
         "prePublishOnly": "tsc && jest && node scripts/prePublishOnly.js",
