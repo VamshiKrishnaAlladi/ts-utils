@@ -5,7 +5,8 @@ try {
     fse.copySync('./dist', '.', { overwrite: true });
     // eslint-disable-next-line no-console
     console.log("Successfully copied 'dist' files to root dir...");
-} catch (error) {
+}
+catch (error) {
     // eslint-disable-next-line no-console
     console.error("Failed to copy 'dist' files to root dir...", error);
 }
