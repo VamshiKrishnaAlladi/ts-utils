@@ -5,9 +5,14 @@ dist/
 scripts/
 src/
 
+.eslintignore
+.eslintrc.json
 .releaserc.json
+commitlint.config.js
 jest.config.js
 Tasks.todo
 ts-jest.tsconfig.json
 tsconfig.json
 tslint.json
+
+cc-test-reporter
