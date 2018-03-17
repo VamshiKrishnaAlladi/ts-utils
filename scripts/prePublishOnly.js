@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { copySync } from 'fs-extra';
+const { copySync } = require('fs-extra');
 
 try {
     copySync('./dist', '.', { overwrite: true });
