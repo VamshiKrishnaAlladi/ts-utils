@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-const fse = require('fs-extra');
+import { copySync } from 'fs-extra';
 
 try {
-    fse.copySync('./dist', '.', { overwrite: true });
+    copySync('./dist', '.', { overwrite: true });
     // eslint-disable-next-line no-console
     console.log("Successfully copied 'dist' files to root dir...");
 }

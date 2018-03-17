@@ -1,5 +1,5 @@
 import { MissingMandatoryParamError } from './../errors/missing-mandatory-param-error';
-import { tryCatch } from './try-catch';
+import { tryCatch } from '.';
 
 function getATestPromise(shouldResolve:boolean = true, resolveWith = 'someData', rejectWith = new Error('someError')) {
     return new Promise((resolve, reject) => {
