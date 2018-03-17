@@ -21,33 +21,20 @@
     "scripts": {
         "prebuild": "npm run clean:dist",
         "build": "tsc",
-
         "clean:dist": "rimraf dist",
-
         "codecov": "codecov",
-
         "precommit": "npm run lint && npm test",
         "commit": "git-cz",
-
         "commitmsg": "commitlint -e $GIT_PARAMS",
-
         "lint": "tslint -t codeFrame -p . && eslint . ",
-
         "prePublishOnly": "npm run build && npm test && node scripts/prePublishOnly.js",
-
         "prepack": "npm run build && npm test && node scripts/prePublishOnly.js",
-
         "semantic-release": "semantic-release",
-
         "test": "jest",
-
         "test:ci": "npm test -- --coverage",
         "posttest:ci": "cat ./coverage/lcov.info | codacy-coverage",
-
         "test:verbose": "npm test -- --verbose",
-
         "watch:build": "npm run build -- --watch",
-
         "watch:test": "npm test -- --watchAll"
     },
     "engines": {
@@ -63,14 +50,14 @@
         "codecov": "3.0.0",
         "commitizen": "2.9.6",
         "cz-conventional-changelog": "2.1.0",
-        "eslint": "4.18.2",
+        "eslint": "4.19.0",
         "eslint-config-airbnb-base": "12.1.0",
         "eslint-plugin-import": "2.9.0",
         "fs-extra": "5.0.0",
         "husky": "0.14.3",
         "jest": "22.4.2",
         "rimraf": "2.6.2",
-        "semantic-release": "15.0.2",
+        "semantic-release": "15.1.2",
         "ts-jest": "22.4.1",
         "tslint": "5.9.1",
         "tslint-config-airbnb": "5.7.0",
