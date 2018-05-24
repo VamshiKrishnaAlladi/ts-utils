@@ -48,7 +48,7 @@
         "@types/node": "9.4.7",
         "codacy-coverage": "2.1.0",
         "codecov": "3.0.0",
-        "commitizen": "2.9.6",
+        "commitizen": "2.10.0",
         "cz-conventional-changelog": "2.1.0",
         "eslint": "4.19.0",
         "eslint-config-airbnb-base": "12.1.0",
