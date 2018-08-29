@@ -6,6 +6,7 @@ A Collection of utility functions for TS made in TS
 
 **Development Branch:**
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7878a56983534339b36f2d0e831f5c9e)](https://app.codacy.com/app/VamshiKrishnaAlladi/ts-utils?utm_source=github.com&utm_medium=referral&utm_content=VamshiKrishnaAlladi/ts-utils&utm_campaign=Badge_Grade_Dashboard)
 [![CircleCI](https://img.shields.io/circleci/project/github/VamshiKrishnaAlladi/ts-utils/development.svg?label=CircleCI%20Build)](https://circleci.com/gh/VamshiKrishnaAlladi/ts-utils/tree/development)
 
 [![Codacy branch grade](https://img.shields.io/codacy/grade/087ef7b36a114df2827bec3a1e4f2299/development.svg?label=Codacy%20Grade&colorB=32CF99)](https://app.codacy.com/app/VamshiKrishnaAlladi/ts-utils/dashboard?bid=6675977)
