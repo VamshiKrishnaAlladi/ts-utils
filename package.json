@@ -24,9 +24,8 @@
         "npm": ">=4.2.0"
     },
     "scripts": {
-        "prebuild": "npm run clean:dist",
+        "prebuild": "rimraf dist",
         "build": "tsc",
-        "clean:dist": "rimraf dist",
         "codecov": "codecov",
         "commit": "git-cz",
         "lint": "tslint -t codeFrame -p . && eslint . ",
