@@ -57,7 +57,7 @@
         "codacy-coverage": "3.4.0",
         "codecov": "3.5.0",
         "cz-conventional-changelog": "3.0.2",
-        "fs-extra": "8.1.0",
+        "fs-extra": "9.0.0",
         "husky": "3.0.4",
         "jest": "24.9.0",
         "rimraf": "3.0.0",
