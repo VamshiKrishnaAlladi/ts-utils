@@ -1,4 +1,4 @@
-import { MissingMandatoryParamError } from './../errors/missing-mandatory-param-error';
+import { MissingMandatoryParamError } from '../errors/missing-mandatory-param-error';
 import { mandate } from '.';
 
 describe('Module ts-utils/mandate:', () => {

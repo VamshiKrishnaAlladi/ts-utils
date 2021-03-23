@@ -15,8 +15,7 @@ describe('Module ts-utils/errors/base-error:', () => {
 
             try {
                 throw new BaseError(testErrorMessage);
-            }
-            catch (error) {
+            } catch (error) {
                 expect(error).toBeInstanceOf(BaseError);
                 expect(error.message).toBe(testErrorMessage);
             }

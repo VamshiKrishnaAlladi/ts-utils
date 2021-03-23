@@ -1,12 +1,10 @@
-import { MissingMandatoryParamError } from './../errors/missing-mandatory-param-error';
+import { MissingMandatoryParamError } from '../errors/missing-mandatory-param-error';
 import { tryCatch } from '.';
 
-function getATestPromise(shouldResolve:boolean = true, resolveWith = 'someData', rejectWith = new Error('someError')) {
+function getATestPromise(shouldResolve:boolean = true, resolutionData = 'someData', rejectionData = new Error('someError')) {
     return new Promise((resolve, reject) => {
         setTimeout(
-            () => {
-                return shouldResolve ? resolve(resolveWith) : reject(rejectWith);
-            },
+            () => (shouldResolve ? resolve(resolutionData) : reject(rejectionData)),
             50,
         );
     });
@@ -21,9 +19,8 @@ describe('Module ts-utils/try-catch:', () => {
         test('should throw a MissingMandatoryParamError when called without a "promise"', async () => {
             expect.assertions(2);
             try {
-                const result = await tryCatch();
-            }
-            catch (error) {
+                await tryCatch();
+            } catch (error) {
                 expect(error).toBeInstanceOf(MissingMandatoryParamError);
                 expect(error.missingParam).toBe('promise');
             }

@@ -12,7 +12,7 @@ describe('Module ts-utils/clone', () => {
     });
 
     test('should return a copy equivalent to the input', () => {
-        const obj = { a:123 };
+        const obj = { a: 123 };
         const copy = clone(obj);
 
         isEquivalent(obj, copy);

@@ -8,7 +8,11 @@ export function clone(input: any): any {
     if (isObject(input) && !isFunction(input)) {
         return Object
             .keys(input)
-            .reduce((map, key) => (map[key] = clone(input[key]), map), {});
+            .reduce((map, key) => {
+                // eslint-disable-next-line no-param-reassign
+                map[key] = clone(input[key]);
+                return map;
+            }, {});
     }
 
     return input;

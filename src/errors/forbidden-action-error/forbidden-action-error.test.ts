@@ -1,4 +1,4 @@
-import { BaseError } from './../base-error';
+import { BaseError } from '../base-error';
 import { ForbiddenActionError } from '.';
 
 describe('Module ts-utils/errors/forbidden-action-error:', () => {

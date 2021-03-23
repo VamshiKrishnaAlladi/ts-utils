@@ -54,7 +54,7 @@ describe('Module ts-utils/predicates', () => {
         test('should return true when the input is a function', () => {
             function namedFn() {}
             const arrowFn = () => {};
-            function* generatorFn() {}
+            function* generatorFn() { yield true; }
 
             expect(isFunction(namedFn)).toBe(true);
             expect(isFunction(arrowFn)).toBe(true);
