@@ -1,4 +1,4 @@
-import { BaseError } from './../base-error';
+import { BaseError } from '../base-error';
 import { MissingMandatoryParamError } from '.';
 
 describe('Module ts-utils/errors/missing-mandatory-param:', () => {

@@ -9,6 +9,8 @@ export class BaseError extends Error {
 
         // The next statement is used to fix an issue with TypeScript.
         // Reference: https://github.com/Microsoft/TypeScript/issues/13965
+        Object.setPrototypeOf(this, BaseError.prototype);
+        // eslint-disable-next-line no-proto
         this.__proto__ = new.target.prototype;
     }
 }

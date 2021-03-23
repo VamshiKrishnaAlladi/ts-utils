@@ -11,7 +11,7 @@
     "globals": {
         "ts-jest": {
             "diagnostics": false,
-            "tsConfig": "./ts-jest.tsconfig.json"
+            "tsconfig": "./ts-jest.tsconfig.json"
         }
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",

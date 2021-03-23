@@ -1,1 +1,1 @@
-export const pipe = (...fns: Function[]) => input => fns.reduce((input, fn) => fn(input), input);
+export const pipe = (...fns: Function[]) => (input) => fns.reduce((acc, fn) => fn(acc), input);

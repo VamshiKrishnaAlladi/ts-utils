@@ -1,7 +1,8 @@
 import { pipe } from './pipe';
 
-describe('Moudle ts-utils/pipe', () => {
+describe('Module ts-utils/pipe', () => {
     test('should export a function "pipe"', () => {
+        // eslint-disable-next-line no-shadow
         const { pipe } = require('./pipe');
 
         expect(pipe).toBeInstanceOf(Function);
@@ -9,9 +10,9 @@ describe('Moudle ts-utils/pipe', () => {
 
     describe('"pipe" function', () => {
         test('should run passed functions in given order', () => {
-            const add10 = x => x + 10;
-            const half = x => x / 2;
-            const minus20 = x => x - 20;
+            const add10 = (x) => x + 10;
+            const half = (x) => x / 2;
+            const minus20 = (x) => x - 20;
 
             const result = pipe(add10, half, minus20)(200);
 
@@ -24,5 +25,4 @@ describe('Moudle ts-utils/pipe', () => {
             expect(result).toBe(3);
         });
     });
-
 });
