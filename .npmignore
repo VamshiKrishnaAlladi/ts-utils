@@ -1,4 +1,5 @@
 .circleci/
+.husky/
 .vscode/
 coverage/
 scripts/
@@ -10,9 +11,7 @@ src/
 commitlint.config.js
 jest.config.json
 package-lock.json
-Tasks.todo
 ts-jest.tsconfig.json
 tsconfig.json
-tslint.json
 
 cc-test-reporter
